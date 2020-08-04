@@ -1,0 +1,71 @@
+.error-main {
+    background-image: url('http://gohike.wmdd.ca/gohike/wp-content/uploads/2020/07/404-background.png');
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-content {
+    text-align: center;
+    font-family: $main-font;
+    width: 80%;
+    margin: 0 auto;
+    background-color: $white;
+}
+
+.error-content span {
+    letter-spacing: .8rem;
+    font-size: 7rem;
+    font-weight: bold;
+    color: $dark-green;
+}
+
+.error-content p {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.error-content p:nth-child(2) {
+    padding-top: 2rem;
+    text-transform: uppercase;
+    color: $light-brown;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.error-content .button {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.home-button {
+    background-color: $dark-green;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    text-decoration: none;
+    color: $white;
+    text-align: center;
+}
+
+.home-button:hover{
+    background-color: $light-brown;
+    color: $dark-green;
+}
+
+/***************** Media Queries ***********************/
+
+@media screen and (min-width: 1200px) {
+    .error-content {
+        width: 50%;
+    }
+}

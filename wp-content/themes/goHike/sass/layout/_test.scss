@@ -1,0 +1,88 @@
+/* DOWNLOAD PAGE LAYOUT ============ */
+.download-content-wrapper {
+  background-color: $light-gold;
+ 
+}
+
+.feature-thumbnail-download {
+  padding: 3rem;
+}
+
+
+.download-content-wrapper .gohike-download-title {
+  padding: 0 3rem;
+  padding-top: 8%;
+  padding-bottom: 2rem;
+  color: $dark-green;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.download-content-wrapper .gohike-download-description {
+  font-family: $main-font;
+  font-size: 20px;
+  text-align: center;
+}
+
+.gohike-button {
+
+  background-color: $dark-green;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: $main-font;
+  outline: none;
+  cursor: pointer;
+}
+
+.gohike-download-button {
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.gohike-button:hover {
+  background-color: $light-brown;
+  color: $dark-green;
+}
+
+/* Download Layout Media Queries *************/
+
+@media screen and (min-width: 750px) {
+
+    .download-content-wrapper .gohike-download-title {
+      font-size: 60px;
+    }
+
+    .download-content-wrapper .gohike-download-description {
+      font-size: 26px;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+  .feature-thumbnail-download img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .download-content-wrapper .gohike-download-title {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+}
+
+
+
+
+

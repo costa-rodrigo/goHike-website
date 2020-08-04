@@ -1,0 +1,38 @@
+/*
+Theme Name: goHike
+Author: Rodrigo Costa
+Description: Starter theme for the goHike website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: goHike
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Normalize ========================= */
+@import 'site/normalize';
+
+/* Variables ==========================*/
+
+@import 'variables/colors';
+@import 'variables/typography';
+
+/* Media ============================= */
+@import 'media/media';
+
+/* Typography ======================== */
+@import 'typography/typography';
+
+/* Main ============================== */
+@import 'site/main';
+
+
+/* MAIN CONTENT SECTIONS ============================ */
+@import 'layout/header';
+@import 'layout/test';
+@import 'layout/about';
+@import 'layout/contact';
+@import 'layout/features';
+@import 'layout/404';
+@import 'layout/footer';

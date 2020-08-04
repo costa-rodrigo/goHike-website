@@ -1,0 +1,68 @@
+/* CONTACT PAGE LAYOUT ============ */
+.nf-form-content {
+  font-family: $main-font;
+
+}
+
+.nf-response-msg:nth-of-type(1) {
+  font-family: $main-font;
+  font-size: 20px;
+  text-align: center;
+}
+
+#nf-label-field-1,
+#nf-label-field-2,
+#nf-label-field-15,
+#nf-label-field-3 {
+  font-weight: 500;
+}
+
+#nf-field-4 {
+  background-color: $dark-green;
+  color: white;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border-radius: 30px;
+}
+
+#nf-field-4:hover {
+  background-color: $light-brown;
+}
+
+#nf-field-1,
+#nf-field-2,
+#nf-field-15,
+#nf-field-3  {
+  border: none;
+  background-color: $light-grey;
+}
+
+#nf-form-title-1 {
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $light-brown;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.form-wrapper {
+  padding: 0 3rem;
+}
+
+// center's submit button
+.nf-field-element {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .form-wrapper {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .form-wrapper {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

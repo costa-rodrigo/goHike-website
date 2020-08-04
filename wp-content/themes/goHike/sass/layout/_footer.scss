@@ -1,0 +1,84 @@
+/* FOOTER LAYOUT ============ */
+.site-footer {
+  background-color: $light-brown;
+  padding: 2rem;
+}
+
+#menu-social-footer,
+#main-menu-footer {
+  padding: 0;
+  line-height: 1.75;
+}
+
+#menu-social-footer a,
+#main-menu-footer a {
+  text-decoration: none;
+  color: $white;
+  font-family: $main-font;
+}
+
+.site-footer img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-content {
+  color: $white;
+  font-family: $main-font;
+
+}
+
+.copyright-gohike {
+  margin-bottom: 0;
+}
+
+.main-social li,
+.main-menu-footer li {
+  list-style: none;
+}
+
+.footer-menu-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.social-menu {
+  grid-column: 2;
+}
+
+footer .custom-logo {
+  filter: none;
+}
+
+/*Footer Media Queries ***************/
+
+@media screen and (min-width: 700px) {
+  .site-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .footer-menu-wrapper {
+    grid-column: 3;
+    grid-row: 1/span 2;
+    grid-gap: 1rem;
+  }
+
+  .footer-content {
+    grid-column: 1;
+    grid-row: 2;
+    
+  }
+
+
+
+}
+
+@media screen and (min-width: 1000px) {
+  .site-footer a,
+  .footer-content {
+    padding-left: 15%;
+  }
+}

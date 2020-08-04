@@ -1,0 +1,390 @@
+/* HEADER LAYOUT ============ */
+.header-content-wrapper {
+    height: 90%;
+    margin-bottom: 4rem;
+}
+
+.site-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    background-color: $white;
+}
+
+.gohike-header-title,
+.gohike-header-description {
+    color: white;
+    font-family: $main-font;
+    text-align: center;
+}
+
+.gohike-header-title {
+    font-size: 40px;
+    padding-top: 10%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 500;
+}
+
+.gohike-header-description {
+    font-size: 22px;
+    padding: 3rem;
+}
+
+.gohike-download-header {
+    background-color: $white;
+    border: none;
+    border-radius: 30px;
+    color: $dark-green;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: $main-font;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gohike-download-header:hover {
+    background-color: $light-brown;
+    color: $dark-green;
+}
+
+.gohike-header-button {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 15%; 
+}
+
+
+.site-header img {
+    max-width: 250px;
+    height: auto;
+}
+
+.custom-logo {
+    // Turning the svg logo into goHike's custom green color
+    filter: brightness(0) saturate(100%) invert(14%) sepia(14%) saturate(1682%) hue-rotate(71deg) brightness(96%) contrast(87%);;
+}
+
+.site-header .site-branding {
+    text-align: left;
+}
+
+.main-menu-left ul li{
+    list-style-type: none;
+}
+
+.main-menu-right ul li{
+    list-style-type: none;
+}
+
+.mobile-menu ul li{
+    list-style-type: none;
+}
+
+.main-menu-left ul li a {
+    color: $dark-green;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.main-menu-left ul li a:hover {
+    color: $light-brown;
+}
+
+.main-menu-right ul li a {
+    color: $dark-green;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.main-menu-right ul li a:hover {
+    color: $light-brown;
+}
+
+.mobile-menu ul li a {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.mobile-menu ul li a:hover {
+    color: $light-brown;
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    line-height: 100%;
+}
+
+.mobile-menu {
+    display: none;
+    width: 100%;
+    background-color: $dark-green;
+    height: auto;
+    /* The side navigation menu */
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* Position and style the close button (top right corner) */
+.mobile-menu .closebtn {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    font-size: 50px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: $white;
+}
+
+.site-navigation-left {
+    display: none;
+}
+
+.menu-mobile {
+    height: 100%;
+}
+
+.menu-mobile ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.menu-mobile ul li:first-child {
+    margin-top: -200px;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menu-mobile ul li a {
+    letter-spacing: 6px;
+    font-size: 30px;
+}
+
+.site-branding {
+    grid-column-start: 1;
+}
+
+.site-navigation-right {
+
+    display: none;
+}
+
+.main-menu-left ul{
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+}
+
+.main-menu-right ul{
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+}
+
+.menu-icon {
+    color: $dark-green;
+    font-size: 2.5rem;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+/***************** Media Queries ***********************/
+
+@media screen and (min-width: 768px) {
+
+    .site-header img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .main-menu-left ul li a {
+        font-size: 20px;
+    }
+    
+    .main-menu-right ul li a {
+        font-size: 20px;
+    }
+
+    .site-header .site-branding {
+        text-align: center;
+    }
+
+    .site-header {
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .site-navigation-left {
+        display: block;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .site-branding {
+        display: block;
+        grid-column-start: 2;
+    }
+
+    .site-navigation-right {
+        display: grid;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    .main-menu-left ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-menu-right ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #menu-primary-left {
+        padding-left: 0;
+    }
+
+    #menu-primary-right {
+        padding-left: 0;
+    }
+
+    .gohike-header-title {
+        font-size: 54px;
+    }
+    .gohike-header-description {
+        font-size: 26px;
+    }
+
+    .gohike-header-title,
+    .gohike-header-description {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.gohike-header-description {
+    padding: 3rem;
+}
+
+.header-content-wrapper {
+    height: 650px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .site-header img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .main-menu-left ul li a {
+        font-size: 24px;
+    }
+    
+    .main-menu-right ul li a {
+        font-size: 24px;
+    }
+
+    .site-header .site-branding {
+        text-align: center;
+    }
+
+    .site-header {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    .gohike-header-title,
+    .gohike-header-description {
+    width: 50%;
+}
+    
+    .menu-icon {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .site-navigation-left {
+        display: block;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .site-branding {
+        display: block;
+        grid-column-start: 2;
+    }
+
+    .site-navigation-right {
+        display: grid;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    .main-menu-left ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-menu-right ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+// @media screen and (min-width: 1500px) {
+
+//     .gohike-header-button {
+//         margin-bottom: 15%;
+//     }
+
+// }

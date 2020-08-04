@@ -1,0 +1,187 @@
+/* FEATURE PAGE LAYOUT ============ */
+.feature-number,
+.gohike-feature-name {
+  color: $light-brown;
+}
+
+.feature-title {
+  color: $light-brown;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: $main-font;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+
+.feature-number,
+.gohike-feature-name,
+.gohike-feature-description {
+  font-family: $main-font;
+  text-align: center;
+}
+
+.gohike-feature-description {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 20px;
+  padding-bottom: 1rem;
+  line-height: 1.35;
+}
+
+.feature-number {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.gohike-feature-name {
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.gohike-feature-name {
+  font-size: 36px;
+}
+
+
+.feature-thumbnail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.feature-wrapper {
+  display: grid;
+  padding-bottom: 10%;
+}
+
+.feature-thumbnail {
+  grid-row: 2;
+
+}
+
+.feature-thumbnail img {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  width: 300px;
+  height: auto;
+}
+
+// FEATURE MEDIA QUERIES ===================
+
+@media screen and (min-width: 700px) {
+  .feature-wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .feature-number,
+  .gohike-feature-name {
+  font-size: 40px;
+}
+
+.gohike-feature-description {
+  font-size: 22px;
+  padding: 0;
+}
+
+
+  .feature-wrapper:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+
+  .feature-wrapper:nth-child(1) .feature-thumbnail {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .feature-wrapper:nth-child(1) .full-feature-description,
+  .feature-wrapper:nth-child(3) .full-feature-description {
+    margin-left: 20%;
+  }
+
+   .feature-wrapper:nth-child(2) .full-feature-description,
+   .feature-wrapper:nth-child(4) .full-feature-description {
+     width: 80%;
+   }
+
+   .feature-title {
+     padding-bottom: 4rem;
+   }
+  
+
+  .feature-wrapper:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .feature-wrapper:nth-child(2) .feature-thumbnail {
+    grid-column: 1;
+    grid-row: 1;
+  } 
+
+ 
+
+  .feature-wrapper:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-wrapper:nth-child(3) .feature-thumbnail {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .feature-wrapper:nth-child(4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-wrapper:nth-child(4) .feature-thumbnail {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+
+  .feature-thumbnail img {
+    padding: 0;
+  }
+
+  .feature-number,
+  .gohike-feature-name,
+  .gohike-feature-description {
+    text-align: left;
+
+  }
+
+  .features {
+    margin: 0 2rem;
+  }
+
+
+
+  }
+
+  @media screen and (min-width: 1000px) {
+    .features {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .feature-number,
+    .gohike-feature-name {
+    font-size: 46px;
+  }
+  
+  .gohike-feature-description {
+    font-size: 26px;
+    padding: 0;
+  }
+  }
+
+

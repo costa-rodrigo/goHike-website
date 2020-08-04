@@ -1,0 +1,35 @@
+header {
+    font-family: 'freight-sans-pro', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+content-area {
+    font-family: 'freight-big-pro', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main-page-card span {
+    font-family: 'freight-sans-pro', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+
+}
+
+.main-page-card p {
+    font-family: 'freight-sans-pro', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 38ch;
+    line-height: 1.4;
+}
+
+#download-app {
+    font-family: 'freight-sans-pro', sans-serif;
+    font-weight: 500;
+    color: #203720;
+    border-color: white;
+    background-color: white;
+}

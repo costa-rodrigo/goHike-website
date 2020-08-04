@@ -1,0 +1,142 @@
+/* ABOUT PAGE LAYOUT ============ */
+.team-members {
+  background-color: $light-grey;
+  padding: 2rem 6rem;
+}
+
+.team-members img {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.team-member-information {
+  padding-bottom: 3rem;  
+}
+
+.our-team-title {
+  color: $light-brown;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.member-name {
+  color: $dark-green;
+  font-size: 20px;
+  margin: .5rem;
+  
+}
+
+.our-team-title,
+.member-name,
+.team-member-postion,
+.team-member-description {
+  text-align: center;
+  font-family: $main-font;
+}
+
+.about-content-wrapper {
+  font-family: $main-font;
+  padding-bottom: 4rem;
+}
+
+
+.the-story-title {
+  color: $light-brown;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  
+}
+
+.about-content-wrapper h3 {
+  color: $dark-green;
+  font-size: 40px;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.about-content-wrapper p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.about-content-wrapper {
+  padding: 0 2rem;
+}
+
+.team-member-postion {
+  margin-bottom: .25rem;
+}
+
+/* ABOUT PAGE MEDIA QUERIES ================= */
+
+@media screen and (min-width: 700px) {
+  .team-members{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    padding: 2rem 4rem;
+  }
+
+  .about-content-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .our-team-title {
+    grid-column: 1 /span 3;
+
+  }
+
+  .about-content-wrapper h3 {
+    font-size: 60px;
+    
+  
+  }
+
+  .about-content-wrapper p {
+    font-size: 26px;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+  .team-members{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+    
+  }
+
+  .our-team-title {
+    grid-column: 1 /span 6;
+
+  }
+
+  .about-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  .about-content-wrapper h3 {
+    position: absolute;
+    top: 40px;
+    width: 40%;
+    grid-column: 1;
+    
+  }
+
+
+  .about-content-wrapper .wp-block-group:nth-of-type(1) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .about-content-wrapper .wp-block-group:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+
+}
